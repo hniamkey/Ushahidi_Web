@@ -1,11 +1,9 @@
 [submodule "application/i18n"]
 	path = application/i18n
 	url = git://github.com/ushahidi/Ushahidi-Localizations.git
-
-[submodule "plugins/socialmedia"]
-	path = plugins/socialmedia
-	url = git://github.com/ditorelo/Ushahidi-SocialMedia.git
-
 [submodule "plugins/twitter"]
 	path = plugins/twitter
 	url = git://github.com/ditorelo/Ushahidi-Twitter.git
+[submodule "plugins/socialmedia"]
+	path = plugins/socialmedia
+	url = git://github.com/ditorelo/Ushahidi-SocialMedia.git
