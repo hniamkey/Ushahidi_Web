@@ -47,7 +47,7 @@ class Scheduler_Controller extends Controller {
 			WHERE `value` < UNIX_TIMESTAMP() AND `key` = 'scheduler_lock';");
 		
 		// If no entries were changed, scheduler is already running
-		if ($result->count() <= 0)
+		if ($result->count() <= 0 && false)
 		{
 			Kohana::log('info', 'Could not acquire scheduler lock');
 			if (isset($_GET['debug']) AND $_GET['debug'] == 1)
@@ -120,7 +120,7 @@ class Scheduler_Controller extends Controller {
 				$debug .= "~~~~~~~~~~~~~~~~~~~~~~~~~~~" . "<BR />~~~~~~~~~~~~~~~~~~~~~~~~~~~" . "<BR />RUNNING: " . $scheduler->scheduler_name . "<BR />~~~~~~~~~~~~~~~~~~~~~~~~~~~" . "<BR /> LAST RUN: " . date("r", $scheduler_last) . "<BR /> LAST DUE AT: " . date('r', $cron->getLastRanUnix()) . "<BR /> SCHEDULE: <a href=\"http://en.wikipedia.org/wiki/Cron\" target=\"_blank\">" . $scheduler_cron . "</a>";
 			}
 
-			if ($scheduler_controller AND (!($scheduler_last > $cronRan) OR $scheduler_last == 0))
+			if ($scheduler_controller AND (!($scheduler_last > $cronRan) OR $scheduler_last == 0) || 1)
 			{
 				$run = FALSE;
 
@@ -135,12 +135,13 @@ class Scheduler_Controller extends Controller {
 				}
 				catch (Exception $e)
 				{
+					var_dump($e);
 					// Nada.
 				}
 
 				// @todo allow tasks to save state between runs. 
 
-				if ($run !== FALSE)
+				if ($run !== FALSE ||1)
 				{
 					// Set last time of last execution
 					$schedule_time = time();

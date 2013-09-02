@@ -14,7 +14,7 @@
  * @license    http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License (LGPL) 
  */
 
-class Twitter_Model extends ORM
+class Twitter_Model1 extends ORM
 {	
 	protected $belongs_to = array('incident');
 	
