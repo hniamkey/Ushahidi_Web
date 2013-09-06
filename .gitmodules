@@ -6,4 +6,4 @@
 	url = https://github.com/ditorelo/Ushahidi-SocialMedia.git
 [submodule "plugins/socialmedia-twitter"]
 	path = plugins/socialmedia-twitter
-	url = https://github.com/ditorelo/Ushahidi-SocialMedia.git
+	url = https://github.com/ditorelo/Ushahidi-Twitter.git
