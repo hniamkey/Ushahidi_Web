@@ -4,6 +4,6 @@
 [submodule "plugins/socialmedia"]
 	path = plugins/socialmedia
 	url = https://github.com/ditorelo/Ushahidi-SocialMedia.git
-[submodule "plugins/twitter"]
-	path = plugins/twitter
-	url = https://github.com/ditorelo/Ushahidi-Twitter.git
+[submodule "plugins/socialmedia-twitter"]
+	path = plugins/socialmedia-twitter
+	url = https://github.com/ditorelo/Ushahidi-SocialMedia.git
