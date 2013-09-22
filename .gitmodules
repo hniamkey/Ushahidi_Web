@@ -7,3 +7,6 @@
 [submodule "plugins/socialmedia_twitter"]
 	path = plugins/socialmedia_twitter
 	url = https://github.com/ditorelo/Ushahidi-Twitter.git
+[submodule "plugins/socialmedia_facebook"]
+	path = plugins/socialmedia_facebook
+	url = https://github.com/ditorelo/Ushahidi-Facebook.git
