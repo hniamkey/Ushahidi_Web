@@ -10,3 +10,9 @@
 [submodule "plugins/socialmedia_facebook"]
 	path = plugins/socialmedia_facebook
 	url = https://github.com/ditorelo/Ushahidi-Facebook.git
+[submodule "plugins/socialmedia_gplus"]
+	path = plugins/socialmedia_gplus
+	url = https://github.com/ditorelo/Ushahidi-Gplus.git
+[submodule "plugins/socialmedia_instagram"]
+	path = plugins/socialmedia_instagram
+	url = https://github.com/ditorelo/Ushahidi-Instagram.git
